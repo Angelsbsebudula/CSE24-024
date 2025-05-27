@@ -1,0 +1,167 @@
+/* ===== CORE VARIABLES ===== */
+:root {
+  --primary-pink: #ff5e99;
+  --secondary-pink: #ff3385;
+  --light-pink: #ffe4ec;
+  --nav-pink: #ff80b3;
+  --footer-pink: #e63950;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-pink);
+  color: var(--primary-pink);
+}
+
+/* ===== ENHANCED BOOTSTRAP COMPONENTS ===== */
+/* Navbar - Specific selector ensures override */
+header .navbar {
+  background-color: var(--nav-pink);
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar links - Using child combinator for specificity */
+header .navbar .navbar-brand,
+header .navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header .navbar .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.feedback-section {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .form-control, .form-select {
+            border-radius: 10px;
+            padding: 12px;
+        }
+        
+        .btn-danger {
+            background-color: #ff4d6d;
+            border: none;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 25px;
+        }
+        
+        .btn-danger:hover {
+            background-color: #e63950;
+        }
+
+/* Buttons - Target both regular and Bootstrap buttons */
+.btn, 
+[class*="btn-"] {
+  border-radius: 25px;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+/* Primary button variant */
+.btn-primary {
+  background-color: var(--primary-pink);
+  border-color: var(--primary-pink);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-pink);
+  border-color: var(--secondary-pink);
+}
+
+/* Cards - Specific container targeting */
+.product-container .card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-container .card:hover {
+  transform: scale(1.05);
+}
+
+/* Product images */
+.product-container .card-img-top {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+  max-height: 350px;
+  object-fit: cover;
+}
+/* Product Card Styling */
+.product-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 77, 109, 0.2);
+}
+
+.product-card img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Button Styling */
+.btn-danger {
+    background-color: #ff4d6d;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background-color: #e63950;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+}
+/* ===== TICKET PAGE SPECIFIC STYLES ===== */
+.ticket-page .concert-listing {
+  /* These styles ONLY apply within ticket-page */
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-page .concert-image {
+  /* Only affects images in ticket page */
+  max-height: 250px;
+  border: 3px solid #ff4d6d;
+}
+
+/* Mobile styles for ticket page only */
+@media (max-width: 768px) {
+  .ticket-page .concert-image {
+    margin-bottom: 20px;
+  }
+}
+/* Footer - Using ID for specificity */
+#main-footer {
+  background-color: var(--footer-pink);
+  color: white;
+  padding: 15px;
+}
+

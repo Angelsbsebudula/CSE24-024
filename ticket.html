@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert Tickets - K-Pop Paradise</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff4d6d;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">K-Pop Paradise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ticket.html">Tickets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact us.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+  <!-- Concert Listings -->
+  <main class="container py-5">
+    <h2 class="text-center mb-5">Upcoming Concerts</h2>
+    
+    <body class="ticket-page"> <!-- Added body class -->
+  <!-- 1. Enhypen Concert -->
+    <section class="concert-listing mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-3 mb-md-0">
+          <img src="https://i.pinimg.com/736x/53/ac/3b/53ac3b940f8c4fe28312c9da1ad2abed.jpg" 
+               class="concert-image rounded" 
+               alt="Enhypen Dark Moon">
+        </div>
+        <div class="col-md-7">
+          <h3>Enhypen Dark Moon</h3>
+          <div class="mb-3">
+            <label>Ticket Type:</label>
+            <select class="form-select">
+              <option>General Admission - $150</option>
+              <option>VIP Ticket - $300</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-danger w-100">Buy now</a>
+        </div>
+      </div>
+    </section>
+ <!-- 2. New Jeans Concert -->
+    <section class="concert-listing mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-3 mb-md-0">
+          <img src="https://s1.ticketm.net/dam/a/5f8/0b4c3f4d-0ca3-4646-b205-445f7ed505f8_RETINA_PORTRAIT_3_2.jpg" 
+               class="concert-image rounded" 
+               alt="New Jeans Fairies">
+        </div>
+        <div class="col-md-7">
+          <h3>New Jeans: Fairies</h3>
+          <div class="mb-3">
+            <label>Ticket Type:</label>
+            <select class="form-select">
+              <option>General Admission - $150</option>
+              <option>VIP Ticket - $300</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-danger w-100">Buy now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Stray Kids Concert -->
+    <section class="concert-listing mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-3 mb-md-0">
+          <img src="https://koreajoongangdaily.joins.com/data/photo/2022/09/21/d0aaff65-5a6f-41fc-8606-c4b80e95a3af.jpg" 
+               class="concert-image rounded" 
+               alt="Straykids Everyday IV">
+        </div>
+        <div class="col-md-7">
+          <h3>Straykids: Everyday IV</h3>
+          <div class="mb-3">
+            <label>Ticket Type:</label>
+            <select class="form-select">
+              <option>General Admission - $250</option>
+              <option>VIP Ticket - $400</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-danger w-100">Buy now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TXT Concert -->
+    <section class="concert-listing mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-3 mb-md-0">
+          <img src="https://www.j-14.com/wp-content/uploads/2024/10/lover-txt.png?fit=800%2C454&quality=86&strip=all" 
+               class="concert-image rounded" 
+               alt="TXT Hopeless Romantic">
+        </div>
+        <div class="col-md-7">
+          <h3>TXT: Hopeless Romantic</h3>
+          <div class="mb-3">
+            <label>Ticket Type:</label>
+            <select class="form-select">
+              <option>General Admission - $350</option>
+              <option>VIP Ticket - $600</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-danger w-100">Buy now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+ <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 K-Pop Paradise. All Rights Reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

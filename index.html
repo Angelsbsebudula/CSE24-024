@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop Paradise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff4d6d;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">K-Pop Paradise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ticket.html">Tickets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact us.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section text-white text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?kpop,concert'); background-size: cover;">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Welcome to K-Pop Paradise!</h1>
+            <p class="lead">Your one-stop shop for albums, merch, and collectibles.</p>
+            <a href="#shop" class="btn btn-lg btn-danger">Shop Now</a>
+        </div>
+    </div>
+  <main class="home-page">
+  <!-- Your homepage content -->
+ <!-- Single Products Grid -->
+    <div class="container py-5" id="shop">
+        <h2 class="text-center mb-4">🔥 Trending Now 🔥</h2>
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0213ac5d67675999ba7b9c4f21" class="card-img-top p-3" alt="TXT Album">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TXT Album</h5>
+                        <p class="text-danger fw-bold">$25.99</p>
+                        <a href="#" class="btn btn-danger w-100">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5c3398ebaa49a1b1f53eabdf/1600395227703-XZC54V9TXYJS9O2SYEY0/0020100001522.jpg?format=1000w" class="card-img-top p-3" alt="Stray Kids Lightstick">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Stray Kids Lightstick</h5>
+                        <p class="text-danger fw-bold">$39.99</p>
+                        <a href="#" class="btn btn-danger w-100">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <img src="https://kstarmx.com/cdn/shop/products/artist-made-collection-jimin-with-you-hoody-l-size-795102_300x300.jpg?v=1696163862" class="card-img-top p-3" alt="Jimin Hoodie">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jimin Hoodie</h5>
+                        <p class="text-danger fw-bold">$45.99</p>
+                        <a href="#" class="btn btn-danger w-100">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-danger text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">📩 Stay Updated!</h2>
+            <form class="d-flex justify-content-center">
+                <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+                <button type="submit" class="btn btn-light text-danger fw-bold">Subscribe</button>
+            </form>
+        </div>
+    </section>
+  </main>
+  
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 K-Pop Paradise. All Rights Reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
